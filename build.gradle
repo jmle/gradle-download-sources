@@ -1,0 +1,31 @@
+plugins {
+    id 'maven-publish'
+    id 'java-gradle-plugin'
+}
+
+group 'org.konveyor.java.plugin'
+version '1.0-SNAPSHOT'
+
+repositories {
+    mavenCentral()
+    mavenLocal()
+}
+
+gradlePlugin {
+    plugins {
+        sourcesResolutionPlugin {
+            id = 'org.konveyor.java.plugin'
+            implementationClass = 'org.konveyor.java.plugin.SourcesResolutionPlugin'
+        }
+    }
+}
+
+//dependencies {
+//    implementation 'org.codehaus.groovy:groovy-all:3.0.5'
+//    testImplementation 'org.junit.jupiter:junit-jupiter-api:5.8.1'
+//    testRuntimeOnly 'org.junit.jupiter:junit-jupiter-engine:5.8.1'
+//}
+//
+//test {
+//    useJUnitPlatform()
+//}
