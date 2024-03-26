@@ -14,18 +14,8 @@ repositories {
 gradlePlugin {
     plugins {
         sourcesResolutionPlugin {
-            id = 'org.konveyor.java.plugin'
+            id = 'konveyor-download-sources'
             implementationClass = 'org.konveyor.java.plugin.SourcesResolutionPlugin'
         }
     }
 }
-
-//dependencies {
-//    implementation 'org.codehaus.groovy:groovy-all:3.0.5'
-//    testImplementation 'org.junit.jupiter:junit-jupiter-api:5.8.1'
-//    testRuntimeOnly 'org.junit.jupiter:junit-jupiter-engine:5.8.1'
-//}
-//
-//test {
-//    useJUnitPlatform()
-//}
